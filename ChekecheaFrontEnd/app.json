@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Gegwajo-Microfinance",
+    "slug": "Gegwajo-Microfinance",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#ffffff"
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ttpc.GegwajoMicrofinance"
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "ttpc.GegwajoMicrofinance",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a26269fa-28e4-48f4-b577-4e06d34d9169"
+      }
+    }
+  }
+}
