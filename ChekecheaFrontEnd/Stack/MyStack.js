@@ -74,6 +74,12 @@ import AinaYaMatokeo from '../Matokeo/AinaYaMatokeo';
 import WanafunziWoteMatokeo from '../Matokeo/WanafunziWoteMatokeo';
 import IngizaMatokeo from '../Matokeo/IngizaMatokeo';
 
+import MadarasaYoteAngaliaMatokeo from '../Matokeo/MadarasaYoteAngaliaMatokeo';
+import MikondoYoteAngaliaMatokeo from '../Matokeo/MikondoYoteAngaliaMatokeo';
+import WanafunziWoteAngaliaMatokeo from '../Matokeo/WanafunziWoteAngaliaMatokeo';
+import AinaYaMatokeoAngaliaMatokeo from '../Matokeo/AinaYaMatokeoAngaliaMatokeo';
+import AngaliaMatokeoYaMwanafunziMmoja from '../Matokeo/AngaliaMatokeoYaMwanafunziMmoja';
+
 const Stack = createStackNavigator();
 
 function MyStack( {navigation}){
@@ -281,6 +287,51 @@ function MyStack( {navigation}){
       //       headerLeft: () => <Header  title='About Page' />,
       //     })}
       />
+
+
+      <Stack.Screen
+      name="Madarasa Yote Angalia Matokeo"
+      component={MadarasaYoteAngaliaMatokeo}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+
+      <Stack.Screen
+      name="Mikondo Yote Angalia Matokeo"
+      component={MikondoYoteAngaliaMatokeo}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+
+       <Stack.Screen
+      name="Wanafunzi Wote Angalia Matokeo"
+      component={WanafunziWoteAngaliaMatokeo}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+
+       <Stack.Screen
+      name="Aina Ya Matokeo Angalia Matokeo"
+      component={AinaYaMatokeoAngaliaMatokeo}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+         <Stack.Screen
+      name="Angalia Matokeo Ya Mwanafunzi Mmoja"
+      component={AngaliaMatokeoYaMwanafunziMmoja}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
 
 
            <Stack.Screen

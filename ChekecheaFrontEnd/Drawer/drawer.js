@@ -237,7 +237,7 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
                   
                       
                       <Image
-                      source={require('../assets/icon.png')}
+                      source={require('../assets/splash.png')}
                        
                         style={{
                           height: 80,
@@ -286,82 +286,6 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
 
                   </View>
 
-             {userData && userData.is_admin === true && (
-                   <TouchableOpacity
-              style={{
-                flexDirection: "row",
-                alignItems: "center",
-                padding: 10,
-                marginLeft:15,
-              }}
-              onPress={() => setDropdownVisible2(!dropdownVisible2)}
-            >
-              <FontAwesome name="user" size={20} color="white" />
-              <Text style={{ color: "white", 
-              marginLeft: 30, fontFamily: "Light" 
-            }}>
-                Vituo
-              </Text>
-            </TouchableOpacity>
-            )}
-
-
-{userData && userData.is_admin === true && (
-  <>
- {dropdownVisible2 && (
-              <View style={{ 
-                marginLeft: 80,
-
-                 }}>
-                <TouchableOpacity
-                  onPress={() => {
-                    setDropdownVisible2(false);
-                    navigation.navigate("Signup Stack"); // Navigate to first option
-                  }}
-                >
-                  <Text style={{ color: "white", marginVertical: 8 }}>
-                    Weka Taarifa za kituo
-                  </Text>
-                </TouchableOpacity>
-
-                  <TouchableOpacity
-                  onPress={() => {
-                    setDropdownVisible2(false);
-                    navigation.navigate("Ongeza Kituo"); // Navigate to first option
-                  }}
-                >
-                  <Text style={{ color: "white", marginVertical: 8 }}>
-                    Ongeza kituo
-                  </Text>
-                </TouchableOpacity>
-
-
-                   <TouchableOpacity
-                   
-                  // onPress={() => {
-                  //   setDropdownVisible2(false);
-                  //   Linking.openURL(WebsiteLink);
-                  //   //navigation.navigate("Faini Za Leo"); // Navigate to first option
-                  // }}
-
-                  onPress={() => {
-                    setDropdownVisible2(false);
-                    navigation.navigate("Vituo Vilivyosajiliwa"); // Navigate to first option
-                  }}
-
-                >
-                  <Text style={{ color: "white", marginVertical: 8 }}>
-                    Vituo vyote
-                  </Text>
-                </TouchableOpacity>
-
-                
-               
-              </View>
-            )}
-</>
-)}
-
 
                   <DrawerItemList {...props} />
 
@@ -380,7 +304,7 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
               <Text style={{ color: "white", 
               marginLeft: 30, fontFamily: "Light" 
             }}>
-                Attendence
+                Ripoti
               </Text>
             </TouchableOpacity>
 
@@ -391,28 +315,7 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
                 marginLeft: 80,
 
                  }}>
-                <TouchableOpacity
-                  onPress={() => {
-                    setDropdownVisible(false);
-                    navigation.navigate("Marejesho Ya Leo"); // Navigate to first option
-                  }}
-                >
-                  <Text style={{ color: "white", marginVertical: 8 }}>
-                    Marejesho
-                  </Text>
-                </TouchableOpacity>
-
-
-                   <TouchableOpacity
-                  onPress={() => {
-                    setDropdownVisible(false);
-                    navigation.navigate("Faini Za Leo"); // Navigate to first option
-                  }}
-                >
-                  <Text style={{ color: "white", marginVertical: 8 }}>
-                    Faini
-                  </Text>
-                </TouchableOpacity>
+               
 
                  <TouchableOpacity
                   onPress={() => {
@@ -649,40 +552,12 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
 
 
 
- {userData && userData.is_cashier === true && (
-   <Drawer.Screen
-          name="Pokea Rejesho"
-          options={{
-            drawerLabel: "Pokea Rejesho",
-            title: "Pokea Rejesho",
-            
-            drawerIcon: () => (
-              <FontAwesome name="credit-card" size={20} color="white" />
-            )
-          }}
-          component={PokeaRejeshoStack}
-        />
-      )}
-
-   
-         <Drawer.Screen
-          name="Hawajarejesha tarehe"
-          options={{
-            drawerLabel: "Hawajarejesha tarehe",
-            title: "Hawajarejesha tarehe",
-            
-            drawerIcon: () => (
-              <FontAwesome name="user-times" size={20} color="white" />
-            )
-          }}
-          component={HawajarejeshaJana}
-        />
 
         <Drawer.Screen
-          name="Attendence"
+          name="Ita Attendence"
           options={{
-            drawerLabel: "Attendence",
-            title: "Attendence",
+            drawerLabel: "Ita Attendence",
+            title: "Ita Attendence",
             
             drawerIcon: () => (
               <FontAwesome name="book" size={20} color="white" />
@@ -691,79 +566,6 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
           component={MadarasaYote}
         />
 
-
-
-           <Drawer.Screen
-          name="Mikataba Hai"
-          options={{
-            drawerLabel: "Mikataba Hai",
-            title: "Mikataba Hai",
-            
-            drawerIcon: () => (
-              <FontAwesome name="check-square-o" size={20} color="white" />
-            )
-          }}
-          component={MikatabaHai}
-        />
-
-
-   <Drawer.Screen
-          name="Nje Ya Mkataba Tarehe"
-          options={{
-            drawerLabel: "Nje Ya Mkataba Tarehe",
-            title: "Nje Ya Mkataba Tarehe",
-            
-            drawerIcon: () => (
-              <FontAwesome name="window-close" size={20} color="white" />
-            )
-          }}
-          component={NjeYaMkatabaTarehe}
-        />
-
-
-
-    <Drawer.Screen
-          name="Nje Ya Mktaba Wote"
-          options={{
-            drawerLabel: "Nje Ya Mktaba Wote",
-            title: "Nje Ya Mktaba Wote",
-            
-            drawerIcon: () => (
-              <FontAwesome name="times" size={20} color="white" />
-            )
-          }}
-          component={NjeYaMkatabaWote}
-        />
-
-
-   {/* <Drawer.Screen
-          name="Scan"
-          options={{
-            drawerLabel: "Scan",
-            title: "Scan",
-            
-            drawerIcon: () => (
-              <FontAwesome name="user-circle" size={20} color="white" />
-            )
-          }}
-          component={Scan}
-        />
-*/}
-
-{/*<Drawer.Screen
-  name="Ripoti"
-  options={{
-    drawerLabel: "Ripoti",
-    title: "Ripoti",
-    drawerIcon: () => (
-      <FontAwesome name="book" size={20} color="white" />
-    ),
-  }}
-  component={() => null} // Set component to null since it's a custom dropdown
-/>
-  */}   
-
-       
 
 
 

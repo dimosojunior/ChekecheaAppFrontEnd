@@ -66,7 +66,7 @@ const GoHome = () => {
           </TouchableOpacity>
 
           <Text style={{fontSize:20,
-            fontFamily:"Regular",color:'black'}}>W - A</Text>
+            fontFamily:"Regular",color:'black'}}>OLIMPIACOS</Text>
          <TouchableOpacity 
            onPress={GoHome}
           >

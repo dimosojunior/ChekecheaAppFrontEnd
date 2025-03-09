@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Gegwajo-Microfinance",
-    "slug": "Gegwajo-Microfinance",
+    "name": "Wanafunzi-App",
+    "slug": "Wanafunzi-App",
     "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,11 +17,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "ttpc.GegwajoMicrofinance"
+      "bundleIdentifier": "ttpc.WanafunziApp"
     },
     "android": {
       "versionCode": 1,
-      "package": "ttpc.GegwajoMicrofinance",
+      "package": "ttpc.WanafunziApp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
@@ -29,11 +29,8 @@
     },
     "web": {
       "favicon": "./assets/icon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "a26269fa-28e4-48f4-b577-4e06d34d9169"
-      }
     }
+
+    
   }
 }

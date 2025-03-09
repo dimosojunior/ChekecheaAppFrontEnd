@@ -242,7 +242,7 @@ console.log("UserData Saved:", userData);
                     height:100,
                     borderRadius:50,
                   }}
-                   source={require('../assets/icon.png')} 
+                   source={require('../assets/splash.png')} 
                   >
                   </Image>
 

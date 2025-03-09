@@ -192,7 +192,7 @@ const [userData, setUserData] = useState({});
                 borderRadius:30,
                 width:'20%',
               }} 
-             source={require('../assets/icon.png')} 
+             source={require('../assets/splash.png')} 
               >
               </Image>
               <Text style={{
@@ -219,7 +219,7 @@ const [userData, setUserData] = useState({});
               <Text style={{
                 fontFamily:'Medium',
                 marginLeft:5,
-                color:"black"
+                color:"wheat"
               }}>
               {dateTime.day}</Text>
 
@@ -377,7 +377,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         style={globalStyles.ItemHomeScreenMiddleContainerText1}
         
         >
-        MATOKEO
+        JAZA MATOKEO
         </Text>
        
       </View>
@@ -416,7 +416,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
 {/*mwanzo wa item*/}
 
   <Pressable 
-  onPress={() => navigation.navigate('Nje Ya Mkataba Leo')}
+  onPress={() => navigation.navigate('Madarasa Yote Angalia Matokeo')}
 style={globalStyles.ItemHomeScreenPressableContainer}
 
   >
@@ -454,7 +454,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         style={globalStyles.ItemHomeScreenMiddleContainerText1}
         
         >
-        MALIPO
+        TAZAMA MATOKEO
         </Text>
        
       </View>
@@ -466,7 +466,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         {/*<Text style={{color:'red',fontWeight:"600"}}>percentage </Text>*/}
 
        <Ionicons name='arrow-forward-circle' 
-       onPress={() => navigation.navigate('Nje Ya Mkataba Leo')}
+       onPress={() => navigation.navigate('Madarasa Yote Angalia Matokeo')}
       size={30}
       //color="black" 
       //color="red"
@@ -528,7 +528,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         style={globalStyles.ItemHomeScreenMiddleContainerText1}
         
         >
-        MADARASA
+        MALIPO
         </Text>
        
       </View>
@@ -601,7 +601,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         style={globalStyles.ItemHomeScreenMiddleContainerText1}
         
         >
-        MAZOEZI
+        WANAFUNZI
         </Text>
        
       </View>
