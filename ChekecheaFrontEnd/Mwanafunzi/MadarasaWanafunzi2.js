@@ -35,16 +35,7 @@ import { useFocusEffect } from '@react-navigation/native';
 
 const { width, height } = Dimensions.get('screen');
 
-const MikondoYoteAttendenceSummary = ({ navigation, route }) => {
-
- const { 
-    Darasa,
-    KiasiChaAda
-    
-   
-   } = route.params
-
-
+const MadarasaWanafunzi2 = ({ navigation }) => {
   const [fontsLoaded] = useFonts({
     Bold: require('../assets/fonts/Poppins-Bold.ttf'),
     Medium: require('../assets/fonts/Poppins-Medium.ttf'),
@@ -169,7 +160,7 @@ const getItems = (token) => {
     //console.log('USERTOKEN', userToken);
     //setPending(true);
     //const url = EndPoint + `/GetAllUniversities/?page=${current_page}&page_size=2`;
-   const url = EndPoint + `/GetMikondoView/?page=${current_page}&page_size=500`
+   const url = EndPoint + `/GetMadarasaView/?page=${current_page}&page_size=500`
     // console.log(url);
     fetch(url, {
       method: 'GET',
@@ -228,7 +219,7 @@ const handleRefresh = async () => {
     const token = await AsyncStorage.getItem('userToken');
     if (token) {
       // Call getItems with the token and reset page
-      const url = EndPoint + `/GetMikondoView/?page=1&page_size=500`;
+      const url = EndPoint + `/GetMadarasaView/?page=1&page_size=500`;
       const response = await fetch(url, {
         method: 'GET',
         headers: {
@@ -316,7 +307,7 @@ const handleRefresh = async () => {
     navigation.navigate('Delete Mteja', { ...item, postId: item.id });
 
 const handlePressDetailsPage = (item) =>
-    navigation.navigate('Class Attendence Summary Zote', { ...item, Darasa, KiasiChaAda });
+    navigation.navigate('Mikondo Wanafunzi2', { ...item });
 
 
  const handlePressRenewMteja = (item) =>
@@ -341,7 +332,8 @@ const TableRowComponent = ({ item}) => {
   return (
     <View key={item.id} style={globalStyles.row2}>
 
-      <TouchableOpacity
+
+     <TouchableOpacity
         style={[
           globalStyles.cell,
           globalStyles.buttoncolumn,
@@ -357,11 +349,17 @@ const TableRowComponent = ({ item}) => {
       </TouchableOpacity>
 
 
-      <Text style={[globalStyles.cell, globalStyles.firstNameColumn]}>{item.Mkondo}</Text>
-     
-   
 
-    
+      <Text style={[globalStyles.cell, globalStyles.firstNameColumn]}>{item.Darasa}</Text>
+     
+      {item.KiasiChaAda > 0 ? (
+      <Text style={[globalStyles.cell, globalStyles.otherColumns]}>{formatToThreeDigits(item.KiasiChaAda)}</Text>
+     ):(
+     <Text style={[globalStyles.cell, globalStyles.otherColumns]}>0</Text>
+     )}
+
+
+     
 
     </View>
   )
@@ -369,14 +367,15 @@ const TableRowComponent = ({ item}) => {
     // hili bano la chini ni la if ya juu kama mtu akitype   
 }
 
- if (item.Mkondo.toLowerCase().includes(input.toLowerCase())) {
+ if (item.Darasa.toLowerCase().includes(input.toLowerCase())) {
 
 
 
   return (
     <View key={item.id} style={globalStyles.row2}>
 
-      <TouchableOpacity
+
+     <TouchableOpacity
         style={[
           globalStyles.cell,
           globalStyles.buttoncolumn,
@@ -392,14 +391,21 @@ const TableRowComponent = ({ item}) => {
       </TouchableOpacity>
 
 
-      <Text style={[globalStyles.cell, globalStyles.firstNameColumn]}>{item.Mkondo}</Text>
-     
-   
 
-    
+      <Text style={[globalStyles.cell, globalStyles.firstNameColumn]}>{item.Darasa}</Text>
+     
+      {item.KiasiChaAda > 0 ? (
+      <Text style={[globalStyles.cell, globalStyles.otherColumns]}>{formatToThreeDigits(item.KiasiChaAda)}</Text>
+     ):(
+     <Text style={[globalStyles.cell, globalStyles.otherColumns]}>0</Text>
+     )}
+
+
+     
 
     </View>
   )
+
 
 
   // hili bano la chini ni la if ya pili mwisho
@@ -435,7 +441,7 @@ const TableRowComponent = ({ item}) => {
                 fontFamily: 'Medium',
               }}
             >
-             Chagua Mkondo
+             Madarasa Yote
             </Text>
           </View>
 
@@ -452,7 +458,7 @@ const TableRowComponent = ({ item}) => {
               <TextInput
                 value={input}
                 onChangeText={(text) => setInput(text)}
-                placeholder="Tafuta Mkondo"
+                placeholder="Tafuta Darasa"
                 placeholderTextColor="black"
                 style={globalStyles.AppInputHomeScreenOtherPages}
               />
@@ -493,12 +499,11 @@ const TableRowComponent = ({ item}) => {
 
               <View style={globalStyles.table}>
                 <View style={[globalStyles.row, globalStyles.header]}>
-
-                 <Text style={[globalStyles.cell2, globalStyles.buttoncolumn]}>Attendence</Text>
+                 <Text style={[globalStyles.cell2, globalStyles.buttoncolumn]}>Mikondo</Text>
                  
-                  <Text style={[globalStyles.cell2, globalStyles.firstNameColumn]}>Mkondo</Text>
+                  <Text style={[globalStyles.cell2, globalStyles.firstNameColumn]}>Darasa</Text>
                  
-                 
+                  <Text style={[globalStyles.cell2, globalStyles.otherColumns]}>Ada</Text>
                  
                  
                  
@@ -594,4 +599,4 @@ const TableRowComponent = ({ item}) => {
   );
 };
 
-export default MikondoYoteAttendenceSummary;
+export default MadarasaWanafunzi2;

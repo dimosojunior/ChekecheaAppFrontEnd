@@ -35,7 +35,7 @@ import { useFocusEffect } from '@react-navigation/native';
 
 const { width, height } = Dimensions.get('screen');
 
-const MikondoYoteAttendenceSummary = ({ navigation, route }) => {
+const MikondoWanafunzi2 = ({ navigation, route }) => {
 
  const { 
     Darasa,
@@ -316,7 +316,7 @@ const handleRefresh = async () => {
     navigation.navigate('Delete Mteja', { ...item, postId: item.id });
 
 const handlePressDetailsPage = (item) =>
-    navigation.navigate('Class Attendence Summary Zote', { ...item, Darasa, KiasiChaAda });
+    navigation.navigate('Wanafunzi Wanafunzi2', { ...item, Darasa, KiasiChaAda });
 
 
  const handlePressRenewMteja = (item) =>
@@ -494,7 +494,7 @@ const TableRowComponent = ({ item}) => {
               <View style={globalStyles.table}>
                 <View style={[globalStyles.row, globalStyles.header]}>
 
-                 <Text style={[globalStyles.cell2, globalStyles.buttoncolumn]}>Attendence</Text>
+                 <Text style={[globalStyles.cell2, globalStyles.buttoncolumn]}>Wanafunzi</Text>
                  
                   <Text style={[globalStyles.cell2, globalStyles.firstNameColumn]}>Mkondo</Text>
                  
@@ -594,4 +594,4 @@ const TableRowComponent = ({ item}) => {
   );
 };
 
-export default MikondoYoteAttendenceSummary;
+export default MikondoWanafunzi2;

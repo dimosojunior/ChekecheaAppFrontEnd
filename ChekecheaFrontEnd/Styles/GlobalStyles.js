@@ -777,6 +777,7 @@ FullTaarifaZaMarejeshoContainer:{
 FullTaarifaZaMarejeshoLeftContainer:{
   width:'45%',
   alignItems:'flex-start',
+  justifyContent:'space-between',
   // borderColor:'white',
   // borderWidth:1,
 },

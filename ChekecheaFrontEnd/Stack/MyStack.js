@@ -80,6 +80,19 @@ import WanafunziWoteAngaliaMatokeo from '../Matokeo/WanafunziWoteAngaliaMatokeo'
 import AinaYaMatokeoAngaliaMatokeo from '../Matokeo/AinaYaMatokeoAngaliaMatokeo';
 import AngaliaMatokeoYaMwanafunziMmoja from '../Matokeo/AngaliaMatokeoYaMwanafunziMmoja';
 
+
+import MadarasaYoteMadarasa from '../Madarasa/MadarasaYoteMadarasa';
+import AddDarasa from '../Madarasa/AddDarasa';
+import FutaDarasa from '../Madarasa/FutaDarasa';
+import BadilishaDarasa from '../Madarasa/BadilishaDarasa';
+import FutaMatokeo from '../Matokeo/FutaMatokeo';
+
+import MadarasaWanafunzi2 from '../Mwanafunzi/MadarasaWanafunzi2';
+import MikondoWanafunzi2 from '../Mwanafunzi/MikondoWanafunzi2';
+import WanafunziWanafunzi2 from '../Mwanafunzi/WanafunziWanafunzi2';
+import FutaMwanafunzi2 from '../Mwanafunzi/FutaMwanafunzi2';
+import BadilishaMwanafunzi2 from '../Mwanafunzi/BadilishaMwanafunzi2';
+
 const Stack = createStackNavigator();
 
 function MyStack( {navigation}){
@@ -327,6 +340,92 @@ function MyStack( {navigation}){
          <Stack.Screen
       name="Angalia Matokeo Ya Mwanafunzi Mmoja"
       component={AngaliaMatokeoYaMwanafunziMmoja}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+
+      <Stack.Screen
+      name="Madarasa Yote Madarasa"
+      component={MadarasaYoteMadarasa}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+      
+
+       <Stack.Screen
+      name="Add Darasa"
+      component={AddDarasa}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+          <Stack.Screen
+      name="Futa Darasa"
+      component={FutaDarasa}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+      
+
+        <Stack.Screen
+      name="Badilisha Darasa"
+      component={BadilishaDarasa}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+        <Stack.Screen
+      name="Futa Matokeo"
+      component={FutaMatokeo}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+          <Stack.Screen
+      name="Madarasa Wanafunzi2"
+      component={MadarasaWanafunzi2}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+           <Stack.Screen
+      name="Mikondo Wanafunzi2"
+      component={MikondoWanafunzi2}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+          <Stack.Screen
+      name="Wanafunzi Wanafunzi2"
+      component={WanafunziWanafunzi2}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+          <Stack.Screen
+      name="Futa Mwanafunzi2"
+      component={FutaMwanafunzi2}
+      // options={ () => ({ 
+      //       headerLeft: () => <Header  title='About Page' />,
+      //     })}
+      />
+
+
+
+     <Stack.Screen
+      name="Badilisha Mwanafunzi2"
+      component={BadilishaMwanafunzi2}
       // options={ () => ({ 
       //       headerLeft: () => <Header  title='About Page' />,
       //     })}

@@ -62,6 +62,9 @@ import { useFocusEffect } from '@react-navigation/native';
 
 import { UserContext } from '../UserContext';
 
+import MadarasaYoteMadarasa from '../Madarasa/MadarasaYoteMadarasa';
+import AddDarasa from '../Madarasa/AddDarasa';
+
 //import Scan from '../Screens/Scan';
 
 
@@ -310,6 +313,11 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
 
 
 
+
+
+
+
+
  {dropdownVisible && (
               <View style={{ 
                 marginLeft: 80,
@@ -332,6 +340,71 @@ const [dropdownVisible2, setDropdownVisible2] = useState(false);
             )}
 
             
+
+
+
+
+
+
+
+             <TouchableOpacity
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                padding: 10,
+                marginLeft:15,
+              }}
+              onPress={() => setDropdownVisible2(!dropdownVisible2)}
+            >
+              <FontAwesome name="credit-card" size={20} color="white" />
+              <Text style={{ color: "white", 
+              marginLeft: 30, fontFamily: "Light" 
+            }}>
+                Madarasa
+              </Text>
+            </TouchableOpacity>
+
+
+
+
+            
+
+
+
+ {dropdownVisible2 && (
+              <View style={{ 
+                marginLeft: 80,
+
+                 }}>
+               
+
+                 <TouchableOpacity
+                  onPress={() => {
+                    setDropdownVisible2(false);
+                    navigation.navigate("Add Darasa"); // Navigate to first option
+                  }}
+                >
+                  <Text style={{ color: "white", marginVertical: 8 }}>
+                    Sajili Darasa
+                  </Text>
+                </TouchableOpacity>
+
+
+                 <TouchableOpacity
+                  onPress={() => {
+                    setDropdownVisible2(false);
+                    navigation.navigate("Madarasa Yote Madarasa"); // Navigate to first option
+                  }}
+                >
+                  <Text style={{ color: "white", marginVertical: 8 }}>
+                    Madarasa Yote
+                  </Text>
+                </TouchableOpacity>
+               
+              </View>
+            )}
+
+           
               
 
 <View style={{

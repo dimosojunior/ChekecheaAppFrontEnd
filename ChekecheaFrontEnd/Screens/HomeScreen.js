@@ -490,7 +490,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
 {/*mwanzo wa item*/}
 
   <Pressable 
-  onPress={() => navigation.navigate('Nje Ya Mkataba Wote')}
+  onPress={() => navigation.navigate('Madarasa Yote Madarasa')}
 style={globalStyles.ItemHomeScreenPressableContainer}
 
   >
@@ -528,7 +528,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         style={globalStyles.ItemHomeScreenMiddleContainerText1}
         
         >
-        MALIPO
+        MADARASA
         </Text>
        
       </View>
@@ -540,7 +540,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         {/*<Text style={{color:'red',fontWeight:"600"}}>percentage </Text>*/}
 
        <Ionicons name='arrow-forward-circle' 
-         onPress={() => navigation.navigate('Nje Ya Mkataba Wote')}
+         onPress={() => navigation.navigate('Madarasa Yote Madarasa')}
       size={30}
       //color="black" 
       //color="red"
@@ -564,7 +564,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
 {/*mwanzo wa item*/}
 
   <Pressable 
-  onPress={() => navigation.navigate('Hawajarejesha Jana')}
+ onPress={() => navigation.navigate('Madarasa Wanafunzi2')}
 style={globalStyles.ItemHomeScreenPressableContainer}
 
   >
@@ -613,7 +613,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         {/*<Text style={{color:'red',fontWeight:"600"}}>percentage </Text>*/}
 
        <Ionicons name='arrow-forward-circle' 
-       onPress={() => navigation.navigate('Hawajarejesha Jana')}
+      onPress={() => navigation.navigate('Madarasa Wanafunzi2')}
       size={30}
       //color="black" 
       //color="red"
@@ -642,7 +642,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
 {/*mwanzo wa item*/}
 
   <Pressable 
-  onPress={() => navigation.navigate('Wamemaliza Hawajakopa Tena')}
+ // onPress={() => navigation.navigate('Wamemaliza Hawajakopa Tena')}
 style={globalStyles.ItemHomeScreenPressableContainer}
 
   >
@@ -680,7 +680,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         style={globalStyles.ItemHomeScreenMiddleContainerText1}
         
         >
-        RIPOTI
+        MALIPO
         </Text>
        
       </View>
@@ -692,7 +692,7 @@ style={globalStyles.ItemHomeScreenPressableContainer}
         {/*<Text style={{color:'red',fontWeight:"600"}}>percentage </Text>*/}
 
        <Ionicons name='arrow-forward-circle' 
-         onPress={() => navigation.navigate('Wamemaliza Hawajakopa Tena')}
+         //onPress={() => navigation.navigate('Wamemaliza Hawajakopa Tena')}
       size={30}
       //color="black" 
       //color="red"
